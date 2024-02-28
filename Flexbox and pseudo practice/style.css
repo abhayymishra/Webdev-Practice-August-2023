@@ -1,0 +1,208 @@
+.flex-container {
+    display: flex;
+    background-color: aqua;
+    flex-direction: column;
+    align-items: stretch;
+    
+}
+
+.flex-container > div {
+    margin: 20px;
+    padding: 30px;
+    font-size: 30px;
+    background-color: #8a2be2;
+    align-items: center;
+    line-height: 70px;
+    
+}
+
+.flex-wrap-container {
+    display: flex;
+    background-color: chartreuse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.flex-wrap-container > div {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: cadetblue;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: crimson;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.container > div {
+    text-decoration: underline;
+    font-size: 50px;
+}
+
+.baseline {
+    display: flex;
+    background-color: burlywood;
+    height: 200px;
+    align-items: baseline;
+}
+
+.baseline > div {
+    width: 100px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    line-height: 75px;
+}
+
+@media (max-width : 800px) {
+    .baseline {
+        flex-direction: column;
+    }
+}
+
+.align-container {
+    display: flex;
+    background-color: chocolate;
+    align-content: flex-end;
+}
+
+.align-container > div {
+    width: 90px;
+    margin: 10px;
+    text-align: center;
+    line-height: 60px;
+    background-color: rgb(233, 185, 185);
+    
+}
+
+.basis-shrink-container {
+    display: flex;
+    background-color: aqua;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.basis-shrink-container > div {
+    margin: 40px;
+    padding: 20px;
+    font-size: 40px;
+    background-color: #dccfe9;
+    align-items: center;
+    line-height: 80px;
+    
+}
+
+button {
+    padding: 30px;
+    display: block;
+    margin: auto;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: aqua;
+}
+
+button:active {
+    background-color: blueviolet;
+}
+
+a {
+    display: block;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+a:visited {
+    color: orange;
+}
+
+a.highlight:hover {
+    color: blue;
+    font-size: 40px;
+}
+
+div:hover {
+    color: green;
+}
+
+div:first-child {
+    color: purple;
+}
+
+div:last-child {
+    color: coral;
+}
+
+.list p {
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    
+}
+
+p i:first-child {
+    color: darkgreen;
+}
+
+.list p:nth-child(odd) {
+    color: firebrick;
+}
+
+.element1::first-line {
+    color: burlywood;
+    background-color: #8a2be2;
+    font-size: large;
+}
+
+.element3::selection {
+    background-color: red;
+    color: cyan;
+}
+
+.element2::first-letter {
+    color: #8a2be2;
+    background-color: chartreuse;
+}
+
+.element1::before {
+    content: "Hello everyone";
+}
+
+.element1::after {
+    content: "Bye everyone";
+}
+
+.test:read-only {
+    color: darkolivegreen;
+    background-color: aquamarine;
+}
+
+.test:read-write {
+    color: purple;
+    background-color: aquamarine;
+}
+
+.testing:in-range {
+    border: 5px solid purple;
+}
+
+.testing:out-of-range {
+    border: 5px solid red;
+}
+
+.validornot input:invalid {
+    background-color: hsla(0, 90, 70, 1);
+}
+
+.validornot:valid {
+    background-color: hsla(100, 90, 70, 1);
+}

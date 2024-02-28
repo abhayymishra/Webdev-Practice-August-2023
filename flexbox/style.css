@@ -1,0 +1,24 @@
+.flex-container {
+    display: flex;
+    border: 5px solid hsl(0, 0%, 0%);
+    justify-content: space-between;
+    height: 300px;
+    align-items: center;
+    /*flex-wrap: wrap;*/
+}
+
+.item1 {
+    border: 3px solid lightcoral;
+    height: 150px;
+    width: 150px;
+    background-color: aqua;
+    justify-content: left;
+}
+
+.item2 {
+    border: 3px solid cyan;
+    height: 150px;
+    width: 150px;
+    background-color: brown;
+    flex-shrink: 4;
+}

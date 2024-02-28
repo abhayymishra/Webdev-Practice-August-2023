@@ -1,0 +1,16 @@
+.accordion-header {
+    background-color: red;
+}
+
+.crd {
+    background-color: red;
+}
+
+.container {
+    display: flex;
+    border: 3px solid purple;
+}
+
+.hi {
+    color: red;
+}

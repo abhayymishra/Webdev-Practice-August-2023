@@ -1,0 +1,405 @@
+body { 
+     margin: 0px;
+     padding: 0px; 
+     font-family: "Roboto", sans-serif !important; 
+     line-height: 18px; 
+     text-align: justify; 
+     font-size: 13px !important; 
+     color: #000 !important; 
+     background: #fff; 
+     overflow-x: hidden; 
+     overflow-y: scroll; 
+}  
+
+tr , td {
+    vertical-align: top;
+    overflow: hidden;
+}
+
+ul,li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    font-family: "Roboto" , sans-serif;
+}
+
+ol,ul {
+    list-style: none;
+}
+
+.navbar-nav {
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index:999;
+}
+
+header .col-xl-2:first-child {
+    background: black;
+    border-bottom: 0px;
+    color: white;
+    font-size: 5px !important;
+    margin: 0px !important;
+    padding: 0px!important;
+    font-weight: 200;
+}
+
+
+header .col-xl-4, header .col-xl-6 { 
+    background: #fff; 
+    border-bottom: 1px #cccccc solid; 
+}
+
+header .col-xl-6 {
+    position: relative;
+}
+
+header .col-xl-6 a{
+    position: absolute;
+    left: -20px;
+    top: 7px;
+    z-index: 99999;
+}
+
+header .col-xl-6 ul li {
+    float: left;
+    padding: 0px 29px;
+    position: relative;
+    border-right: 1px #cccccc solid;
+    height: 55px;
+    display: flex;
+}
+
+header .col-xl-6 ul li .badge {
+    position: absolute;
+    top: 7px;
+    padding: 4px 10px;
+    background: black;
+    left: 40px;
+}
+
+header .col-xl-6 ul li img {
+    align-self: center;
+}
+
+header .col-xl-4:last-child .navbar {
+    padding: 0px;
+}
+
+header .col-xl-4:last-child .navbar .navbar-nav .dropdown-menu {
+    position: absolute !important;
+    top: 50px;
+}
+
+header .col-xl-4:last-child .navbar .dropdown-toggle:after{ 
+ content: none !important; 
+}
+header .col-xl-4:last-child .navbar a {
+     color: #000 !important;
+     }
+header .col-xl-4:last-child .navbar a i { 
+    color: #000 !important; 
+    position: relative; 
+    top: 5px; 
+    left: 05px; 
+}
+
+header .col-xl-4:last-child .navbar img {
+     margin-right: 6px; 
+}
+
+header .col-xl-4:last-child .navbar li { 
+    padding: 0px 20px; 
+}
+
+header .col-xl-4:last-child .navbar li a { 
+    font-weight: 700; 
+}
+
+header .col-xl-4:last-child .navbar li:first-child { 
+    display: flex;
+}
+
+header .col-xl-4:last-child .navbar li:first-child i { 
+    align-self: center; 
+    color: #ccc; 
+    font-size: 20px;
+ }
+
+
+@media only screen and (max-width:1274px) and (min-width:992px){
+    header .col-xl-4 ul{
+        margin: 0px;
+    }
+}
+
+.content ul li a {
+    top: 50px;
+}
+
+.content .left_panel {
+    position: fixed;
+    background: #2f3539;
+    width: 228px;
+    float: left;
+    height: 200px;
+    transition: all 0.5s 0s ease-in-out;
+    left: 0;
+    top: 0;
+    padding-top: 0;
+    
+}
+
+.content .left_panel .le_srl {
+    height: 610px;
+    overflow-y: hidden;
+}
+
+.content .left_panel .user_panel h2 {
+    color: #fff;
+    font-size: 16px;
+}
+
+.content .left_panel .user_panel h3{
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.content .left_panel .user_panel h3 + span {
+    color: #959595;
+}
+
+.content .left_panel .user_panel h3 + span + span{
+    color: rgb(75, 196, 75);
+}
+
+.content .left_panel .user_panel p{
+    color: #8abe50;
+    padding-top: 3px;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.content .left_panel .nav > li {
+    background: #191a1a;
+    line-height: 40px;
+    border-bottom: 1px #292d30 solid;
+}
+
+.content .left_panel .nav >li a {
+    color: #99abbc;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.content .left_panel .nav > li:last-child { 
+    border: 0px; 
+}
+
+.content .left_panel .nav > li a img{
+    margin-right: 10px;
+}
+
+.content .left_panel .nav > li a[data-toggle = "collapse"] i {position: relative; right: -37%; font-weight: 700;}
+.content .left_panel .nav > li a[data-toggle="collapse"] + div ul { background: #282929 !important; }
+.content .left_panel .nav > li a[data-toggle="collapse"] + div ul li { background: #282929 !important; border: 0px; }
+.content .left_panel .nav > li a[data-toggle="collapse"] + div ul li a { color: #fff !important; font-size: 14px !important; }
+.content .left_panel .nav > li a[data-toggle="collapse"] + div ul li a:before { content: url(../IMAGES/menu_ad.png); margin-right: 07px; padding-right: 03px; }
+
+
+.content .right_panel {
+    padding-top: 70;
+    position: relative;
+    width: calc(100%-228px);
+    float: right;
+    background: #edecec;
+    transition: all 0.5s 0s  ease-in-out;
+    right: 0;
+}
+
+.content .right_panel .d_text {
+    background: #2f3539;
+    padding: 10px;
+    box-shadow: 1px 0px 5px #c1c1c1;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.content .right_panel .d_bg {
+    background: #fff;
+    padding: 10px;
+    border: 9px #e3e3e3 solid;
+    margin-bottom: 15px;
+}
+
+.content .right_panel .d_bg img{
+    margin-right: 15px;
+}
+
+.content .right_panel .d_bg img + h1{
+    font-size: 20px;
+}
+
+.right_panel h1{
+    color: #6a6a6a;
+}
+
+.content .right_panel .d_bg img + h1 > small {
+    color: #3498db;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.content .right_panel .bttn a:nth-child(1) { background: url(images/add\ new\ \(1\).png) no-repeat #fff 5px 50%; 
+    padding: 10px 20px 10px 23px;
+    font-size: 15px;
+    color: #6a6a6a;
+    text-decoration: none; 
+    margin: 0px 4px; 
+}
+
+.content .right_panel .bttn a:nth-child(2) { background: url(images/copy\ file.png) no-repeat #fff 5px 50%; 
+    padding: 10px 20px 10px 23px;
+    font-size: 15px;
+    color: #6a6a6a;
+    text-decoration: none; 
+    margin: 0px 4px; 
+}
+
+.content .right_panel .bttn a:nth-child(3) { background: url(images/excel.png) no-repeat #fff 5px 50%; 
+    padding: 10px 20px 10px 23px;
+    font-size: 15px;
+    color: #6a6a6a;
+    text-decoration: none; 
+    margin: 0px 4px; 
+}
+
+.content .right_panel .bttn a:nth-child(4) { background: url(images/pdf.png) no-repeat #fff 5px 50%; 
+    padding: 10px 20px 10px 23px;
+    font-size: 15px;
+    color: #6a6a6a;
+    text-decoration: none; 
+    margin: 0px 4px; 
+}
+
+.content .right_panel .bttn a:nth-child(5) { background: url(images/print.png) no-repeat #fff 5px 50%; 
+    padding: 10px 20px 10px 23px;
+    font-size: 15px;
+    color: #6a6a6a;
+    text-decoration: none; 
+    margin: 0px 4px; 
+}
+
+.content .right_panel #stuc table, .content .right_panel #stuc tr, .content .right_panel #stuc td, .content .right_panel #stuc th { text-align: center; 
+    color: #797b7d; 
+    border-width: 0px 0px 1px 0px !important;
+ }
+
+ .content .right_panel #stuc th {
+    background: #f0f9ff;
+ }
+
+.anim {
+    transition: all 0.2s ease-in-out; 
+    transform: scaleY(1.2) rotate(0deg); 
+}
+
+.animm { 
+    transform: rotate(90deg); 
+    transition: all 0.2s ease-in-out;
+ }
+
+ @media only screen and(max-width:1200px) {
+    .right_panel .d_bg img {
+        width: 30%;
+    }
+
+    .header .col-xl-4 .navbar {
+        width: auto;
+    }
+
+    .header .col-xl-4 .ml-5 {
+        margin: 0px;
+    }
+
+    .header .col-xl-4 .navbar-toggler {
+        position: relative !important;
+        top: 10px;
+    }
+ }
+
+ @media only screen and (max-width:px){
+ 
+
+    .offcan .left_panel{
+        left: 0px;
+    }
+
+    .offcan .right_panel{
+        width: calc(100% - 228px);
+    }
+ }
+
+ @media only screen and (max-width: 567px) { 
+    .content .left_panel { 
+        top: 0px !important; 
+    }
+  .content .right_panel { 
+    top: 0px !important; 
+}
+  header .col-xl-6 ul { 
+    display: table !important; 
+    width: auto !important; 
+    margin: 0px auto !important; 
+    float: none !important; 
+}
+  header .col-xl-6 ul + a { 
+    position: absolute !important;
+    left: 89%; 
+    top: -40px; }
+
+  header .col-xl-4 .fixed-top { 
+    position: inherit !important; 
+}
+  header .col-xl-4 .pe-5 { 
+    display: table !important; 
+    width: auto !important; 
+    margin: 0px auto !important;
+    float: none !important;
+    padding: 0px !important; 
+    } 
+}
+
+
+.dropnav {
+    padding: 12px;
+    font-weight: 750;
+    cursor: pointer;
+}
+
+.addon .left_panel { left: 228px;}
+.addon .right_panel { width: 100%; }
+
+.right_panel {
+    padding-top: 43px;
+    padding-left: 225px;
+}
+
+.left_panel{
+    z-index: 11111111;
+    float: left;
+}
+
+.d_text{
+    margin-top: 30px;
+}
+
